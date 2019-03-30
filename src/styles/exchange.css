@@ -1,0 +1,76 @@
+.exchange {
+    background-color: #121826;
+    color: #FFFFFF;
+    padding: 60px 40px;
+}
+
+.exchange .content .top {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.exchange .content .top p {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.exchange .content .top small {
+    font-size: 1.1em;
+}
+
+.exchange .content .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.exchange .content .features .mobile {
+    display: none;
+}
+
+.exchange .content .features .line {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exchange .content .features .line:first-child {
+    margin-bottom: 60px;
+}
+
+.exchange .content .features .feature {
+    width: 25%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.exchange .content .features .feature img {
+    height: 110px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+    .exchange .content .features {
+        justify-content: flex-start;
+    }
+
+    .exchange .content .features .line {
+        display: none;
+    }
+
+    .exchange .content .features .mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .exchange .content .features .feature {
+        width: 40%;
+    }
+
+    .exchange .content .features .mobile:last-child {
+        margin-bottom: 0px;
+    }
+}

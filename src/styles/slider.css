@@ -1,0 +1,92 @@
+.slider {
+    background-color: #FFFFFF;
+    padding: 20px 60px;
+}
+
+.slider .slides .slide .content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.slider .slides .slide .content .crypto {
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 40px;
+}
+
+.slider .slides .slide .content .jumbo {
+    font-size: 3em;
+    font-weight: 800;
+    color: #DCAC0E;
+    margin-bottom: 20px;
+}
+
+.slider .slides .slide .content .text {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.slider .slides .slide .content .crypto .store {
+    display: flex;
+}
+
+.slider .slides .slide .content .crypto .store img {
+    height: 50px;
+}
+
+.slider .slides .slide .content .image {
+    height: 500px;
+    margin-top: -80px;
+}
+
+.slider .slides .slide .track {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.slider .slides .slide .track div {
+    width: 15px;
+    height: 15px;
+    background-color: #DCAC0E;
+    opacity: 0.3;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.slider .slides .slide .track div:last-child {
+    margin-right: 0px;
+}
+
+.slider .slides .slide .track div.active {
+    opacity: 1;
+    cursor: default;
+}
+
+@media (max-width: 1024px) {
+    .slider .slides .slide .content .crypto {
+        flex: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider .slides .slide .content .image {
+        height: 400px;
+    }
+
+    .slider .slides .slide .content {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        padding: 20px 40px;
+    }
+    
+    .slider .slides .slide .content .image {
+        display: none;
+    }
+}

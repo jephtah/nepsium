@@ -1,0 +1,98 @@
+.image img {
+    height: 600px;
+}
+
+.nexus .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nexus .content .image {
+    margin-top: 93px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.nexus .content .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -600px;
+    width: 100%;
+    padding-left: 30%;
+}
+
+.nexus .content .text .big {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+}
+
+.nexus .content .text .bigger {
+    font-size: 3em;
+}
+
+.nexus .content .text .biggest {
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.nexus .content .text .btns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nexus .content .text .btns button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #3246DA;
+    border: 1px solid #3246DA;
+    font-size: 1.1em;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.nexus .content .text .btns button:last-child {
+    background-color: #DCAC0E;
+    border: 1px solid #DCAC0E;
+    margin-right: 0px;
+}
+
+.nexus .content .text .btns button:hover {
+    border: 1px solid #3246DA;
+    color: #3246DA;
+    background: none;
+}
+
+.nexus .content .text .btns button:last-child:hover {
+    border: 1px solid #DCAC0E;
+    color: #DCAC0E;
+    background: none;
+}
+
+@media (max-width: 1024px) {
+    .nexus .content .text p {
+        text-shadow: 0px 0px 1px #F7F7F7;
+    }
+}
+
+@media (max-width: 768px) {
+    .nexus .content .text {
+        padding-left: 0%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nexus .content .text {
+        padding: 20px;
+    }
+
+    .nexus .content .text .btns button {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}

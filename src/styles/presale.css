@@ -1,0 +1,136 @@
+.presale {
+    background-color: #121826;
+    color: #FFFFFF;
+    padding: 60px 0px;
+}
+
+.presale .content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.presale .content > .title {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.presale .content .bar {
+    margin-bottom: 60px;
+}
+
+.presale .content .bar .bar-top {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.presale .content .bar-top .left-bar {
+    width: 30%;
+}
+
+.presale .content .bar-top .left-bar .bonus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.presale .content .bar-top .left-bar .left {
+    height: 50px;
+    background-color: #A8A8A8;
+    margin-top: 10px;
+}
+
+.presale .content .bar-top .hard-cap {
+    flex: 1;
+    height: 50px;
+    background-color: #F7F7F7;
+}
+
+.presale .content .bar .base {
+    display: flex;
+    justify-content: space-between;
+}
+
+.presale .content .below-bar {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.presale .content .below-bar button {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #ddad0f;
+    border: none;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.presale .content .below-bar button:hover {
+    background-color: inherit;
+    border: 2.5px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.presale .content .below-bar .currency {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.presale .content .below-bar .currency .fa-bitcoin {
+    font-size: 1.75em;
+    width: 20px;
+    height: 20px;
+}
+
+.presale .content .below-bar .currency .fa-ethereum {
+    font-size: 1.3em;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-radius: 50%;
+    color: #121826;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presale .content .below-bar .currency .top-bottom {
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    margin: 0px 20px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presale .content .below-bar .currency .top-bottom p {
+    padding: 0px 20px;
+}
+
+@media (max-width: 768px) {
+    .presale .content .bar-top .left-bar {
+        width: 40%;
+    }
+
+    .presale .content .below-bar {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .presale .content .bar-top .left-bar .bonus p span {
+        display: none;
+    }
+
+    .presale .content .below-bar {
+        width: 100%;
+    }
+}

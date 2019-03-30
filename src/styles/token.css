@@ -1,0 +1,285 @@
+.token {
+    padding: 60px 40px;
+    background-color: #FFFFFF;
+}
+
+.token .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.token .content .left {
+    width: 45%;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    margin-right: 5%;
+}
+
+.token .title {
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.token .content .left .title {
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.token .content .left .text {
+    text-align: justify;
+}
+
+.token .content .left button {
+    margin-top: 60px;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #ddad0f;
+    border: none;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+}
+
+.token .content .left button:hover {
+    background-color: inherit;
+    border: 2.5px solid #ddad0f;
+    color: #ddad0f;
+}
+
+.token .content .right .image {
+    height: 480px;
+}
+
+.token .distro {
+    margin-top: 60px;
+    padding: 0px 60px;
+}
+
+.token .distro .tile {
+    margin-top: 40px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.16);
+    padding: 60px;
+    border-radius: 10px;
+}
+
+.token .distro .tile .title {
+    text-align: left;
+}
+
+.token .distro .chart .between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.token .distro .chart .flex-o {
+    display: flex;
+    flex: 1;
+}
+
+.token .distro .chart .end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.token .distro .chart .btns {
+    margin: 10px 0px;
+}
+
+.token .distro .chart p {
+    margin-right: 5%;
+}
+
+.token .distro .chart p:last-child {
+    margin-right: 0%;
+}
+
+.token .distro .chart p.mr5 {
+    margin-right: 5%;
+}
+
+.token .distro .chart .btns div {
+    height: 30px;
+    background-color: #8EC63F;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 1%;
+    font-size: 0.75em;
+    font-weight: 600;
+}
+
+.token .distro .chart .btns div:last-child {
+    margin-right: 0%;
+}
+
+.token .distro .chart .btns .green-15 {
+    background-color: #8EC63F;
+    width: 14%;
+}
+
+.token .distro .chart .btns .green-25 {
+    background-color: #8EC63F;
+    width: 24%;
+}
+
+.token .distro .chart .btns .brown-25 {
+    background-color: #790001;
+    width: 24%;
+}
+
+.token .distro .chart .btns .blue-12 {
+    background-color: #4BC3C2;
+    width: 11%;
+}
+
+.token .distro .chart .btns .orange-65 {
+    background-color: #F16D4F;
+    width: 64%;
+}
+
+.token .distro .chart .btns .orange-15 {
+    background-color: #F16D4F;
+    width: 14%;
+}
+
+.token .distro .chart .btns .pink-15 {
+    background-color: #ED018C;
+    width: 14%;
+}
+
+.token .distro .chart .btns .dark-green-10 {
+    background-color: #01A652;
+    width: 10%;
+}
+
+.token .distro .chart .btns .light-green-5 {
+    background-color: #C4DF9C;
+    width: 4%;
+}
+
+.token .distro .chart .btns .purple-3 {
+    background-color: #A963A9;
+    width: 2.5%;
+}
+
+.token .distro .chart .btns .purple-10 {
+    background-color: #A963A9;
+    width: 10%;
+}
+
+.token .distro .chart .btns .gray-2 {
+    background-color: #707070;
+    width: 2%;
+}
+
+.token .distro .chart .green {
+    color: #8EC63F;
+}
+
+.token .distro .chart .blue {
+    color: #4BC3C2;
+}
+
+.token .distro .chart .orange {
+    color: #F16D4F;
+}
+
+.token .distro .chart .brown {
+    color: #790001;
+}
+
+.token .distro .chart .pink {
+    color: #ED018C;
+}
+
+.token .distro .chart .light-green {
+    color: #C4DF9C;
+}
+
+.token .distro .chart .dark-green {
+    color: #01A652;
+}
+
+.token .distro .chart .purple {
+    color: #A963A9;
+}
+
+.token .distro .chart .gray {
+    color: #707070;
+}
+
+@media (max-width: 1024px) {
+    .token .distro {
+        padding: 0px 40px;
+    }
+
+    .token .distro .tile {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .token .content .left button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .token .content {
+        flex-wrap: wrap;
+    }
+
+    .token .content .left {
+        width: 100%;
+    }
+
+    .token .content .right .image {
+        height: 400px;
+    }
+
+    .token .distro .chart .flex-o,
+    .token .distro .chart .end,
+    .token .distro .chart .between {
+        flex-direction: column;
+    }
+
+    .token .distro .chart p {
+        margin-right: 0%;
+        margin-bottom: 10px;
+    }
+
+    .token .distro .chart .btns div {
+        margin-right: 0%;
+        margin-bottom: 20px;
+    }
+
+    .token .distro .chart .btns .orange-65,
+    .token .distro .chart .btns .brown-25,
+    .token .distro .chart .btns .green-25 {
+        width: 100%;
+    }
+    
+    .token .distro .chart .btns .green-10,
+    .token .distro .chart .btns .blue-12,
+    .token .distro .chart .btns .light-green-5,
+    .token .distro .chart .btns .purple-3,
+    .token .distro .chart .btns .purple-10,
+    .token .distro .chart .btns .gray-2,
+    .token .distro .chart .btns .orange-15,
+    .token .distro .chart .btns .pink-15,
+    .token .distro .chart .btns .dark-green-10,
+    .token .distro .chart .btns .green-15 {
+        width: 50%;
+    }
+}

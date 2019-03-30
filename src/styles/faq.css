@@ -1,0 +1,164 @@
+.faq {
+    background-color: #121826;
+    color: #FFFFFF;
+    padding: 60px 40px;
+}
+
+.faq .content > .title {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq .questions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.faq .questions .question {
+    width: 45%;
+    cursor: pointer;
+}
+
+.faq .questions .question:nth-child(odd) {
+    margin-right: 2.5%;
+}
+
+.faq .questions .question:first-child {
+    margin-bottom: 1%;
+}
+
+.faq .questions .question .que {
+    background-color: #FFFFFF;
+    color: #121826;
+    padding: 20px;
+    font-size: 1.05em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.faq .questions .question .que .fas {
+    margin-left: 10px;
+}
+
+.faq .questions .question .ans {
+    padding: 20px;
+    line-height: 1.5em;
+}
+
+.faq .all-questions {
+    text-align: center;
+    margin: 40px 0px;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.faq .all-questions:hover {
+    text-decoration: underline;
+}
+
+.faq .subscribe {
+    border: 1.25px solid #DCAC0E;
+    border-radius: 20px;
+    padding: 60px 40px;
+}
+
+.faq .subscribe .title {
+    font-size: 2.75em;
+    font-weight: 800;
+    color: #DCAC0E;
+}
+
+.faq .subscribe .title span {
+    color: #FFFFFF;
+}
+
+.faq .subscribe .title + p {
+    font-size: 1.05em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.faq .subscribe form {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq .subscribe form input {
+    height: 70px;
+    border: none;
+    /* width: 60%; */
+    border-radius: 10px;
+    padding-left: 36px;
+    outline: none;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.faq .subscribe form input::placeholder {
+    opacity: 0.75;
+}
+
+.faq .subscribe form button {
+    width: 25%;
+    align-self: flex-end;
+    margin-top: 20px;
+    height: 50px;
+    background-color: #DCAC0E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4em;
+}
+
+@media (max-width: 768px) {
+    .faq .subscribe form button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq .questions .question {
+        width: 100%;
+    }
+
+    .faq .questions .question:nth-child(odd) {
+        margin-right: 0%;
+    }
+
+    .faq .questions .question:first-child {
+        margin-bottom: 2.5%;
+    }
+
+    .faq .questions .question {
+        margin-bottom: 2.5%;
+    }
+
+    .faq .questions .question:last-child {
+        margin-bottom: 0%;
+    }
+
+    .faq .subscribe {
+        padding: 40px 20px;
+    }
+
+    .faq .subscribe form button {
+        width: 100%;
+    }
+
+    .faq .subscribe form input {
+        height: 80px;
+        border-radius: 10px;
+        padding-left: 26px;
+        font-size: 1.5em;
+    }
+
+    .faq .subscribe .title {
+        font-size: 3em;
+    }
+}

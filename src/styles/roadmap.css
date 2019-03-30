@@ -1,0 +1,108 @@
+.roadmap {
+    background-color: #DDAD0F;
+    padding: 60px 40px 120px 40px;
+}
+
+.roadmap .content .top {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.roadmap .content .top p {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.roadmap .content .top small {
+    font-size: 1.1em;
+}
+
+.roadmap .content .cut {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0px;
+    display: flex;
+}
+
+.roadmap .content .road {
+    display: flex;
+    min-width: 1280px;
+    justify-content: center;
+}
+
+.roadmap .content .road .map {
+    text-align: center;
+    width: 13%;
+}
+
+.roadmap .content .road .first {
+    margin-top: -15px;
+}
+
+.roadmap .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #121826;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.roadmap .circle .point {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #121826;
+}
+
+.roadmap .date {
+    opacity: 0.5;
+}
+
+.roadmap .label {
+    font-weight: 600;
+}
+
+.roadmap .content .road .line {
+    height: 4px;
+    width: 10%;
+    margin: 0% -3%;
+    margin-top: -10px;
+    background-color: #121826;
+    align-self: center;
+}
+
+.roadmap .content .road .right-edge,
+.roadmap .content .road .left-edge {
+    height: 4px;
+    width: 5%;
+    margin-top: -10px;
+    background-color: #121826;
+    align-self: center;
+}
+
+.roadmap .content .road .right-edge {
+    margin-left: -3%;
+    margin-right: 10px;
+}
+
+.roadmap .content .road .left-edge {
+    margin-right: -3%;
+    margin-left: 10px;
+}
+
+.roadmap .content .road .fas {
+    font-size: 1.4em;
+    align-self: center;
+    margin-top: -10px;
+}
+
+@media (max-width: 1024px) {
+    .roadmap .content .road {
+        justify-content: flex-start;
+        margin: 0px 20px;
+    }
+}

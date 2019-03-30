@@ -1,0 +1,115 @@
+.team {
+    background-color: #121826;
+    color: #FFFFFF;
+    padding: 60px 40px;
+}
+
+.team .our-team, .team .advisory {
+    margin-bottom: 80px;
+}
+
+.team .title {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.group .person {
+    margin-right: 40px;
+    text-align: center;
+}
+
+.group .person:last-child {
+    margin-right: 0px;
+}
+
+.group .person .image img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.group .person .image {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.group .person .image .social {
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+
+.group .person .image:hover .social {
+/* .group .person .image .social { */
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgba(228,179,1,0.8);
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group .person .image .social a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.group .person .image .social a i {
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: rgb(228,179,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+    padding: 5px;
+}
+
+.group .person .image .social a i:last-child {
+    margin-right: 0px;
+}
+
+.group .person .name {
+    font-weight: 400;
+}
+
+.group .person .name + p {
+    opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+    .group .person:nth-child(odd) {
+        margin-right: 60px;
+    }
+
+    .group .person:nth-child(even) {
+        margin-right: 0px;
+    }
+
+    .group .person:first-child {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .group .person:nth-child(odd),
+    .group .person:nth-child(even) {
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+
+    .group .person:last-child {
+        margin-bottom: 0px;
+    }
+}
