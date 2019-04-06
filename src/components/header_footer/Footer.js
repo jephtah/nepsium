@@ -14,7 +14,7 @@ class Footer extends Component {
 
     handleFormSubmit = e => {
         e.preventDefault();
-        axios({
+        /*axios({
           method: 'post',
           url: `${API_PATH}`,
           headers: { 'content-type': 'application/json' },
@@ -25,7 +25,7 @@ class Footer extends Component {
               mailSent: result.data.sent
             })
           })
-          .catch(error => this.setState({ error: error.message }));
+          .catch(error => this.setState({ error: error.message }));*/
       };
 
     resetForm(){
@@ -40,15 +40,15 @@ class Footer extends Component {
                         <p className="title">Join our team</p>
                         <p className="sub-title">We look forward to hearing from you</p>
                     </div>
-                    <form id="contact-form" onSubmit={this.handleSubmit} method="POST">
+                    <form id="contact-form">
                         <div className="form">
                             <div className="inputs">
-                                <input onChange={e => this.setState({fullName: e.target.value})} type="text" name="fullName" id="name" value={this.state.fullName} />
-                                <input onChange={e => this.setState({email: e.target.value})} type="email" name="email" id="email" value={this.state.email} />
+                                <input onChange={e => this.setState({fullName: e.target.value})} type="text" placeholder="Fullname" name="fullName" id="name" value={this.state.fullName} />
+                                <input onChange={e => this.setState({email: e.target.value})} type="email" placeholder="Email" name="email" id="email" value={this.state.email} />
                             </div>
                             <textarea onChange={e => this.setState({message: e.target.value})} placeholder="Message" name="message" id="message" value={this.state.message}></textarea>
                         </div>
-                        <button>Join</button>
+                        <button type="button" id="btnJoin">Join</button>
                         <div>
 
                         </div>
